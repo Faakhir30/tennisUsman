@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcePro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      * {
+        color: white;
+      }
+      .scroll-container {
+        overflow: auto;
+        max-height: 100%;
+      }
+      .scroll-container::-webkit-scrollbar {
+        width: 12px;
+      }
+      .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #D39A77;
+        border-radius: 10px;
+      }
+      .scroll-container::-webkit-scrollbar-track {
+        background: #14141b;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: #14141b;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid flex-grow-1"  style="background-color: #1e1e29;">
+      <div class="row h-100">
+   
+        <div class="col-8 p-4 d-flex mx-auto flex-column scroll-container" style="background-color: #14141b;">
+          <h3>Matches</h3>
+          <div class="container mt-3">
+            <div class="card p-3 mb-3" style="background-color: #1e1e29;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">Internazionali BNL d'Italia</h5>
+                <span>Semifinals</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="./IMG1.avif" alt="Contestant 1" class="rounded-circle" style="width: 50px; height: 50px;">
+                <div class="ms-3 flex-grow-1">
+                  <h6 class="mb-0" style="color: grey;">S. Bolelli</h6>
+                </div>
+                <div class="mx-3">VS</div>
+                <img src="./IMG1.avif" alt="Contestant 2" class="rounded-circle" style="width: 50px; height: 50px;">
+                <div class="ms-3 flex-grow-1">
+                  <h6 class="mb-0" style="color: grey;">A. Vavassori</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </body>
+</html>
